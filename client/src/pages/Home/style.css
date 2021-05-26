@@ -1,0 +1,836 @@
+.Home{
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.rigth {
+    flex-grow: 2;
+    flex-wrap: wrap;
+}
+
+.left{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-left: auto;
+    display: flex;
+    max-width: initial;
+    flex-direction: row-reverse;
+    padding: 0rem;
+}
+
+.input{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+
+.file_upload_post_first{
+    position: absolute;
+    margin-left: -28px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.xxx{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.4rem auto;
+    border: none;
+    padding: 0rem;
+    box-shadow: 0px -4px 1px 1px #7868e62b;
+    align-items: center;
+    width: 90%;
+    font-size: 14px;
+    height: 46px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    font-family: cursive;
+}
+
+
+.input_create{
+    width: 95%;
+    display: block;
+    margin: 0rem auto;
+    height: 82px;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: inherit;
+}
+.image_input{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    border: none;
+    outline: none;
+    padding: 0rem;
+    margin: 0rem;
+    box-shadow: 0px 0px 4px #b8b5ff;
+    display: block;
+    opacity: 0.9;
+    transition: all 0.20s;
+}
+.image_input:hover{
+    opacity: 0.6;
+}
+.icons_input{
+    width: 80%;
+    margin: 0rem auto;
+    background: #b8b5ff24;
+    display: flex;
+    justify-content: space-evenly;
+    top: 69px;
+    position: absolute;
+    left: 3rem;
+    cursor: pointer;
+    opacity: 0.8;
+    color: #00303f;
+}
+.icons_input i:hover {
+    opacity: 0.6;
+}
+
+
+
+
+.icons_bar{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0rem;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.icons_bar i {
+    margin: 0.3rem;
+    opacity: 0.8;
+    transition: all 0.20s;
+    padding: 0rem;
+    color: #00303f;
+    cursor: pointer;
+}
+
+.icons_bar i:hover{
+    opacity: 0.4;
+}
+
+
+/* post vis and comment... */
+.null{
+    text-decoration: none;
+    color: black;
+}
+
+.connection_home
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0rem auto;
+}
+.rigth_user{
+    flex-grow: 1;
+    width: 30%;
+    order: 2;
+    display: block;
+}
+
+
+.chat_userid {
+    background: #fff;
+    display: flex;
+    position: fixed;
+    width: 30%;
+    box-shadow: 0rem 0rem 0rem 0.3rem #f5f4f44a;
+    border-radius: 0.4rem;
+    margin: 0rem auto;
+    flex-direction: column;
+    bottom: 0rem;
+}
+
+.chat_close{
+    margin: 0rem auto;
+    width: 95%;
+    background: #f5f4f4;
+    font-family: monospace;
+    border: none;
+    border-radius: 0.1rem;
+    box-shadow: 0rem 0rem 0rem 0.1rem #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    padding: 0.4rem;
+}
+.chat_text_list{
+    padding: 0rem;
+    margin: 0rem;
+    padding-left: 0.4rem;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: monospace;
+}
+.chat_text_list_icons{
+    margin-left: auto;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    padding: 0rem;
+    cursor: pointer;
+    opacity: 0.8;
+}.chat_text_list_icons:hover{
+    opacity: 1;
+}
+
+
+
+
+.chat_List_allrr {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: monospace;
+    width: 100%;
+    margin: 0rem auto;
+    padding: 0rem;
+    overflow: hidden;
+    height: 300px;
+    overflow-y: auto;
+}
+.chat_List_allrr.open{
+    height: 0px;
+    transition: all 1.20s;
+}
+.user_image {
+    display: flex;
+    width: 90%;
+    margin: 0.2rem auto;
+    background: #f5f4f433;
+    transition:  all 0.10s;
+}.user_image:hover{
+
+    background: #f5f4f4;
+    
+}
+
+.chat_List_allrr_imag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: 3px solid #f5f4f4;
+    outline: none;
+
+}
+.chat_List_allrr_text {
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+@media  (max-width: 700px){
+    .rigth_user{
+        display : none;
+    }
+
+    .rigth{
+        display : none;
+    }
+
+   .postandfriend {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0.3rem auto;
+        
+    }
+    .post{
+        width: 90%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.file_comment{
+    opacity: 0;
+    position: absolute;
+    right: -14rem;
+}
+.kompis{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.4rem auto;
+    border: none;
+    padding: 0rem;
+    box-shadow: 0px -4px 1px 1px #7868e62b;
+    align-items: center;
+    width: 90%;
+    font-size: 14px;
+    height: 46px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    font-family: cursive;
+}
+
+.firend_image{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 0rem;
+    margin: 0rem;
+    box-shadow: 0px 0px 4px #00303f;
+    display: block;
+    opacity: 0.9;
+    transition: all 0.20s;
+}
+
+.foll{
+    background: #b8b5ff;
+    padding: 0.1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    height: 30px;
+    line-height: 1.8;
+    width: 100px;
+    text-align: center;
+    box-shadow: -2px -2px 5px #00303f;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.20s;
+}
+.foll:hover{
+    opacity: 0.8;
+}
+.postandfriend{
+    width: 50%;
+    margin: 0rem auto;
+    padding: 0.3rem;
+    outline: none;
+    border: none;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    order: 1;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+
+
+/* friend ... end */
+.post{
+    font-family: monospace;
+    margin: 0.8rem;
+    display: block;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    box-shadow: 0.1rem 0.1rem 0.4rem #fff;
+    background: #fff;
+    padding: 0.2rem;
+    max-width: 70%;
+}
+
+/* start like */
+.hen{
+    width: 150px;
+    display: block;
+    margin: 0rem auto;
+    transition: all 0.20s;
+    position: absolute;
+    z-index: 9;
+    box-shadow: 0px 0px 2px red;
+    background-color: #FFF;
+    opacity: 0;
+    left: -0.7rem;
+    margin-top: -2rem;
+}
+.hen:hover{
+    opacity: 1  ;
+}
+.like_first{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0rem;
+    font-size: 12px; 
+    border: 2px solid black;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0rem;
+    border: none;
+}
+.image_like{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: none;
+    padding: none;
+    margin: 0.1rem;
+    transition: all 0.10s;
+    outline: none;
+    border-radius: 1rem;
+    
+
+}
+
+.video{
+    border: none;
+    outline: none;
+    border-radius: 10%;
+            margin: 1rem auto;
+}
+
+.image_like:hover{
+    box-shadow: 0.1rem 0rem 0.1rem 0.2rem #b8b5ff;
+}
+.like_1{
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.10s;
+
+}
+.like_1:hover{
+    text-shadow: 0.1rem 0rem 0.1rem 0.2rem #b8b5ff;
+    color: #b8b5ff;
+}
+
+
+
+.name_image
+{
+    width: auto;
+    font-family: monospace;
+    font-size: 9px;
+    text-transform: capitalize;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.date_image    
+{
+    font-size: 11px;
+    margin-left: 1rem;
+}
+
+.first_post_name{
+    display: flex;
+    margin: 0rem auto;
+    max-width: 90%;
+    
+    padding: 0rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.icons_remove{
+    color: #00303f;
+    right: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem auto;
+    font-size: 14px;
+    position: relative;
+}
+.icons_remove i{
+    cursor: pointer;
+    transition: all 0.20s;
+    outline: none;
+    border:none;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.xp_now{
+    position: absolute;
+    max-width: 100px;
+    height: auto;
+    left: 0rem;
+    top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    border: none;
+    opacity: 0;
+    font-size: 14px;
+}.xp_now:hover{
+    opacity: 1;
+}
+
+.icons_remove i:hover{
+    opacity: 0.7;
+    font-size: 20px;
+}
+.post_create_name{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0px 0px 2px #f5f4f4;
+}
+
+.post_text{
+    margin: 0rem auto;
+    max-width: 90%;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 0.1rem 0.1rem #f5f4f4;
+    display: block;
+    font-size: 13px;
+    font-family: monospace;
+    border: none;
+}
+
+.post_create_text{
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0.2rem auto;
+    border: none;
+    border-radius: 1rem;
+    padding: 0rem;
+    opacity: 0.9;
+}
+.icons_post{
+    margin: 1rem auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem;
+    background: #f5f4f42e;
+    opacity: 0.7;
+}
+.icons_post i{
+   
+    color: black;
+}
+.icons_post i:hover{
+    opacity: 0.4;
+}
+.icons_post i span {
+    color: black;
+      font-size: 19px;
+      margin-left: 0.3rem;
+      padding: 0.2rem;
+      border: none;
+      outline: none;
+}
+.comment{
+    max-width: 90%;
+    margin: 0.4rem auto;
+    border: 2px solid #f5f4f4;
+    display: block;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 0rem;
+    font-size: 12px;
+    font-family: monospace;
+}
+.comment_user{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0.2rem auto;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f5f4f4;
+    padding: 0.1rem;
+}
+.comment_image{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 0rem;
+    margin: 0rem;
+    box-shadow: 0px 0px 4px #00303f;
+    display: block;
+    opacity: 0.9;
+    transition: all 0.20s;
+}
+.name_comment{margin-left: 2rem;}
+
+.comment_image_comment{
+    width: 100%;
+    height: 190px;
+    border: none;
+    border-radius: 0.1rem;
+    outline: none;
+    box-shadow: 0rem 0rem 0rem 0.1rem #f5f4f4;
+}
+.name_comment_ver{
+
+    display: flex;
+    width: 100%;
+    padding: 0rem;
+    margin: 0.4rem;
+    font-size: 13px;
+    font-family: monospace;
+}
+
+
+.icons{ 
+    color: #00303f;
+    position: absolute;
+    top: 1.7rem;
+    right: 1.4rem;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+}
+.icons i:hover {
+    opacity: 0.8;
+}
+
+img:hover{
+    opacity: 0.8;
+}
+
+
+
+
+.modle{
+
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: opacity  .4s ease, visibility .4s ease, transform .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 54678934344;
+}
+
+.modle.open {
+
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.imag_home{
+
+  width: 70%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  
+   
+}
+
+
+.dxcx{
+    top: 1rem;
+    position: absolute;
+    right: 1rem;
+    font-size: 20px;
+    color: #fff;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+
+
+/* Start create Story Image... to users...*/
+.xisdfsd
+{
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    padding: 0rem;
+}
+.silder_Image{
+    width: 85%;
+    background-color: #FFF;
+    margin: 2.4rem auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0rem;
+}
+.silder_Image_create_left{
+    flex-wrap: 1;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0rem;
+    padding: 0rem;
+  
+    padding-left: 2.5rem;
+}
+
+.silder_Image_create_left_box{
+    max-width: 48%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.6rem 0.1rem #f5f4f4;
+    flex-wrap: wrap;
+    position: relative;
+}
+.silder_Image_create_input{
+padding: 0rem;
+width: 100%;
+height: 160px;
+margin: 0rem auto;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+
+}
+.silder_Image_create_icons{
+    width: 24%;
+    display: flex;
+    justify-content: center;
+    padding: 0rem;
+    border-radius: 50%;
+    background-color: #1876f2;
+    margin: 0.3rem auto;
+    position: absolute;
+    left: 38%;
+    bottom: 1.5rem;
+    box-shadow: 0.1rem 0rem 0.5rem 0.3rem #fff;
+    line-height: 0;
+    opacity: 0.8;
+    transition: all 0.02s;
+ 
+}.silder_Image_create_icons:hover{
+    opacity: 1;
+}
+.silder_Image_create_icons i {
+
+    font-size: 28px;
+    color: #FFF;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.silder_Image_create_icons i:hover {
+
+    transform: rotate(
+        45deg
+        );
+            transition: all 0.50s;
+}
+
+
+
+
+.profi_create_ringth {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: flex-start;
+   
+    width: 66%;
+    
+}
+.till_xp{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0rem 0.2rem 0.1rem #f5f4f4;
+    overflow: hidden;
+    padding: 0rem;
+    margin: 0rem auto;
+    overflow: hidden;
+    padding-left: 0.4rem;
+}
+.silder_Image_profile{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    
+}
+.silder_Image_now{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0rem;
+    left: 1rem;
+    opacity: 0.9;
+    border: 0.2rem solid #fff;
+    outline: none;
+}
+
+.uploadingImaf{
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    width: 35px;
+    opacity: 0;
+}
